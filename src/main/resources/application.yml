@@ -1,0 +1,89 @@
+# Spring Default =======================================================================================================
+
+spring:
+  datasource:
+    hikari:
+      connection-timeout: 15000
+      maximum-pool-size: 10
+
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        default_batch_fetch_size: 1000
+        format_sql: true
+    show_sql: true
+
+  output:
+    ansi:
+      enabled: always
+
+  profiles:
+    active: local
+#    active: dev
+#    active: prod
+
+# Logging Level
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
+
+# Server Encoding
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+# example
+# Static Props Values
+app:
+  props:
+    file:
+      publicPath: INPUT-DATA
+    jwt:
+      secretkey: "TEMPLATE_SECRET_ENCRYPTED_KEY(Replace This)"
+      issur: "TemplateIssur (Replace This)"
+      claimId: "email"
+#  AMAZONE  SMS  SERVICE
+    mail:
+     host: email-smtp.us-east-1.amazonaws.com
+     username: "AMAZON SMS USERNAME"
+     password: "AMAZON SMS PASSWORD"
+     protocol: smtp
+     port: 465
+     auth: true
+     enable: true
+     required: true
+    #    GOOGLE MAIL SERVICE
+    #    mail:
+    #      host: smtp.gmail.com
+    #      port: 587
+    #      username: "Google Mail Service Username (Replace This)"
+    #      password: "Google Mail Service Password (Replace This)"
+    #      properties:
+    #      mail.smtp.auth: true
+    #      mail.smtp.starttls.enable: true mail:
+    #      host: smtp.gmail.com
+    #      port: 587
+    #    mail:
+    #      username: krule.office@gmail.com
+    #      password: wfxzvbyvkgeugltx #!rnrfnf1079
+    #      properties:
+    #      mail.smtp.auth: true
+    #      mail.smtp.starttls.enable: true
+#    kakao:
+#      restApiKey: INPUT-DATA
+#      javaScriptKey: INPUT-DATA
+#      redirectUrl: INPUT-DATA
+#      appAdminKey: INPUT-DATA
+#      logoutUrl: INPUT-DATA
+    aws:
+      key:
+        accessKey: "AWS Key (Replace this)"
+        secretKey: "AWS Secret Key (Replace this)"
+      path:
+        targetBucket: INPUT-DATA
+        localUrl: INPUT-DATA

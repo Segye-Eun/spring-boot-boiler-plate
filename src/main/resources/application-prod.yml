@@ -1,0 +1,18 @@
+# Spring Live =======================================================================================================
+
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb:// {Test-DataBase-Url} :3306/
+    username:
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+# Logging Level
+logging:
+  level:
+    org.hibernate.SQL: off
+    org.hibernate.type: off

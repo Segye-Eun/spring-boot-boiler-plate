@@ -1,0 +1,10 @@
+${AnsiStyle.BOLD}
+${AnsiColor.BRIGHT_RED}
+ ______   ______     ______     ______      __     __   __     ______
+/\  == \ /\  == \   /\  ___\   /\  ___\    /\ \   /\ "-.\ \   /\  ___\
+\ \  _-/ \ \  __<   \ \  __\   \ \  __\    \ \ \  \ \ \-.  \  \ \ \____
+ \ \_\    \ \_\ \_\  \ \_____\  \ \_\       \ \_\  \ \_\\"\_\  \ \_____\
+  \/_/     \/_/ /_/   \/_____/   \/_/        \/_/   \/_/ \/_/   \/_____/
+                                                                         ${AnsiColor.BRIGHT_CYAN}
+* Pref INC. Spring Boot${AnsiStyle.UNDERLINE}
+* Application: Krule, Spring Boot Version:${spring-boot.formatted-version}
